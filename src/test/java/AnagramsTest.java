@@ -8,4 +8,11 @@ public class AnagramsTest {
     Anagrams testAnagrams = new Anagrams();
     assertEquals(true, testAnagrams instanceof Anagrams);
   }
+
+  @Test
+  public void anagramCheck_instantiatesString_String() {
+    Anagrams testAnagrams = new Anagrams();
+    String expected = "";
+    assertEquals(expected, testAnagrams.anagramCheck("", ""));
+  }
 }
