@@ -10,9 +10,9 @@ public class AnagramsTest {
   }
 
   @Test
-  public void anagramCheck_instantiatesString_String() {
+  public void anagramCheck_compareInstances_String() {
     Anagrams testAnagrams = new Anagrams();
-    String expected = "";
-    assertEquals(expected, testAnagrams.anagramCheck("", ""));
+    boolean expected = true;
+    assertEquals(expected, testAnagrams.anagramCheck("cat", "tac"));
   }
 }
